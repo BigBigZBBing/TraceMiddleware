@@ -9,3 +9,5 @@ services.TraceRegister();
 app.UseTraceMiddleware();
 
 ```
+
+当前运行路径下寻找Trace.db文件
