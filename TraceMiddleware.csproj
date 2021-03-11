@@ -1,6 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Description>微型组件 链路消息日志</Description>
+    <Copyright>©2021-2021 Big.Cookie</Copyright>
+    <PackageReleaseNotes>微型组件 链路消息日志</PackageReleaseNotes>
+    <Version>1.0.2021.311</Version>
+    <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/BigBigZBBing/TraceMiddleware</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,6 +16,13 @@
     <PackageReference Include="Dapper.SimpleCRUD" Version="2.2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.113.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
