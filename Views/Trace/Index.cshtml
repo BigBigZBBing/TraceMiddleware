@@ -2,19 +2,23 @@
 @{
     Layout = "_Trace";
 }
-<table border="1" cellspacing="0">
+<table border="1" cellspacing="0" width="100%">
     <thead>
-        <tr>Url</tr>
-        <tr>RunTime</tr>
-        <tr>CreateTime</tr>
-        <tr>ErrorMessage</tr>
+        <tr>
+            <th>Id</th>
+            <th>Url</th>
+            <th>RunTime</th>
+            <th>CreateTime</th>
+            <th>ErrorMessage</th>
+        </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
+                <td>@item.Id</td>
                 <td>@item.Url</td>
-                <td>@item.RunTime</td>
+                <td>@(item.RunTime)ms</td>
                 <td>@item.CreateTime</td>
                 <td>@item.ErrorMessage</td>
             </tr>

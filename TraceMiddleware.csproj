@@ -1,6 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <Description>微型组件 链路消息日志</Description>
     <Copyright>©2021-2021 Big.Cookie</Copyright>
     <PackageReleaseNotes>微型组件 链路消息日志</PackageReleaseNotes>
@@ -8,6 +8,7 @@
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/BigBigZBBing/TraceMiddleware</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

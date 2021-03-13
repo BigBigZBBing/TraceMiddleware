@@ -26,7 +26,7 @@ namespace TraceMiddleware
             {
                 if (con.State != ConnectionState.Open)
                     con.Open();
-                return con.GetList<TraceLog>("limit 200");
+                return con.GetList<TraceLog>("order by Id desc limit 200");
             }
         }
     }

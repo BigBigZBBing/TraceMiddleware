@@ -17,12 +17,12 @@ namespace TraceMiddleware
             SimpleCRUD.SetDialect(SimpleCRUD.Dialect.SQLite);
             var path = AppDomain.CurrentDomain.BaseDirectory;
             var dbFile = Path.Combine(path, "Trace.db");
+            Setting.DbPath = dbFile;
             if (!File.Exists(dbFile))
             {
                 SQLiteConnection.CreateFile(dbFile);
                 CreateTraceLog(dbFile);
             }
-            Setting.DbPath = dbFile;
         }
 
         static void CreateTraceLog(string dbPath)
